@@ -32,6 +32,7 @@ class ReminderDialogFragment(private val plantName: String) : DialogFragment() {
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+
         return activity?.let {
             val builder = AlertDialog.Builder(it)
                 .setTitle(R.string.water_reminder)
